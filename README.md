@@ -3,7 +3,7 @@
 
 ## 1. Скачивание архива со всеми необходимыми файлами
 
-По [ссылке](https://github.com/alfa-laboratory/alfalink-1c-directbank-via-api/archive/refs/heads/main.zip) можно скачать архив с необходимыми для тестирования файлами.
+По [ссылке](https://github.com/Host-to-Host-Instructions/alfalink-1c-directbank-via-api/archive/refs/heads/master.zip) можно скачать архив с необходимыми для тестирования файлами.
 
 **Архив содержит:**
 
@@ -194,8 +194,8 @@ https://www.cryptopro.ru/products/csp/jcsp https://www.cryptopro.ru/products/csp
 
 В случае возникновения вопросов/проблем вы можете:
 
-- Найти решение своего вопроса на [странице вопросов к документации](https://github.com/alfa-laboratory/alfalink-1c-directbank-via-api/issues)
-- Создать тикет на [странице документации](https://github.com/alfa-laboratory/alfalink-1c-directbank-via-api/issues). Для этого нужно нажать на кнопку New issue, указать в заголовке краткое описание проблемы, а потом описать проблему полностью, при необходимости, приложив скриншоты.
+- Найти решение своего вопроса на [странице вопросов к документации](https://github.com/Host-to-Host-Instructions/alfalink-1c-directbank-via-api/issues)
+- Создать тикет на [странице документации](https://github.com/Host-to-Host-Instructions/alfalink-1c-directbank-via-api/issues). Для этого нужно нажать на кнопку New issue, указать в заголовке краткое описание проблемы, а потом описать проблему полностью, при необходимости, приложив скриншоты.
 - Отправить свой вопрос по почте на адрес:
   - [AIShitik@alfabank.ru](mailto:AIShitik@alfabank.ru) (Шитик Артём)
   - в копию (обязательно):
