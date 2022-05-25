@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "73fffc2f-dbde-4f4e-a18f-f6326398668a",
+		"_postman_id": "4977cf15-175e-446e-9277-956d024bcb5a",
 		"name": "1C:DirectBank. Тестирование",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -65,7 +65,7 @@
 			"response": []
 		},
 		{
-			"name": "Отправить документ",
+			"name": "Отправить пакет с документом (документ - это Запрос выписки/Платёж/Ведомость в банк)",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -107,7 +107,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Packet xmlns=\"http://directbank.1c.ru/XMLSchema\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" id=\"f816dfd4-4683-4f68-b912-ffffffee0002\" formatVersion=\"2.2.2\" creationDate=\"2021-06-09T13:33:45.483\" userAgent=\"1С - БЭД: 1.7.2.55;БиблиотекаЭлектронныхДокументовДемо: 1.7.2.55\">\n  <Sender>\n    <Customer id=\"40702810701300009144\" name=\"Общество с ограниченной ответственностью &quot;Тест Директ Банк&quot;\" inn=\"0329156629\"/>\n  </Sender>\n  <Recipient>\n    <Bank bic=\"044525593\" name=\"АО &quot;АЛЬФА-БАНК&quot;\"/>\n  </Recipient>\n  <Document id=\"f816dfd4-4683-4f68-b912-ffffffff0001\" dockind=\"14\" formatVersion=\"2.2.2\">\n<Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPFN0YXRlbWVu\ndFJlcXVlc3QgY3JlYXRpb25EYXRlPSIyMDIxLTA2LTA5VDEzOjMzOjQ1LjQ2NiIg\nZm9ybWF0VmVyc2lvbj0iMi4yLjIiIGlkPSJmODE2ZGZkNC00NjgzLTRmNjgtYjkx\nMi1mZmZmZmZmZjAwMDEiIHVzZXJBZ2VudD0iMdChIC0g0JHQrdCUOiAxLjcuMi41\nNTsg0JHQuNCx0LvQuNC+0YLQtdC60LDQrdC70LXQutGC0YDQvtC90L3Ri9GF0JTQ\nvtC60YPQvNC10L3RgtC+0LLQlNC10LzQvjogMS43LjIuNTUiIHhtbG5zPSJodHRw\nOi8vZGlyZWN0YmFuay4xYy5ydS9YTUxTY2hlbWEiIHhtbG5zOnhzPSJodHRwOi8v\nd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3\nLnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSI+CiAgICAgIDxTZW5kZXIg\naWQ9IjQwNzAyODEwNzAxMzAwMDA5MTQ0IiBpbm49IjAzMjkxNTY2MjkiIGtwcD0i\nMDQzMzYwMDgxIiBuYW1lPSLQntCx0YnQtdGB0YLQstC+INGBINC+0LPRgNCw0L3Q\nuNGH0LXQvdC90L7QuMyGINC+0YLQstC10YLRgdGC0LLQtdC90L3QvtGB0YLRjNGO\nICZxdW90O9Ci0LXRgdGCINCU0LjRgNC10LrRgiDQkdCw0L3QuiZxdW90OyIvPgog\nICAgICA8UmVjaXBpZW50IGJpYz0iMDQ0NTI1NTkzIiBuYW1lPSLQkNCeICZxdW90\nO9CQ0JvQrNCk0JAt0JHQkNCd0JomcXVvdDsiLz4KICAgICAgPERhdGE+CiAgICAg\nICAgICAgIDxTdGF0ZW1lbnRUeXBlPjA8L1N0YXRlbWVudFR5cGU+CiAgICAgICAg\nICAgIDxEYXRlRnJvbT4yMDIxLTA1LTAxVDEzOjUxOjQ1LjQ3NzwvRGF0ZUZyb20+\nCiAgICAgICAgICAgIDxEYXRlVG8+MjAyMS0wNS0zMFQxMzo1MTo0NS40Nzc8L0Rh\ndGVUbz4KICAgICAgICAgICAgPEFjY291bnQ+NDA3MDI4MTA3MDEzMDAwMDkxNDQ8\nL0FjY291bnQ+CiAgICAgICAgICAgIDxCYW5rPgogICAgICAgICAgICAgICAgICA8\nQklDPjA0NDUyNTU5MzwvQklDPgogICAgICAgICAgICAgICAgICA8TmFtZT7QkNCe\nICZxdW90O9CQ0JvQrNCk0JAt0JHQkNCd0JomcXVvdDs8L05hbWU+CiAgICAgICAg\nICAgICAgICA8L0Jhbms+CiAgICAgICAgICA8L0RhdGE+CjwvU3RhdGVtZW50UmVx\ndWVzdD4=</Data>\n  </Document>\n</Packet>"
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Данный пример содержит пакет с запросом выписки. В запросе указываются необходимый период выписки и реквизиты счёта -->\n<!-- Packet@id генерируется новый уникальный для каждого пакета -->\n<Packet \n  xmlns=\"http://directbank.1c.ru/XMLSchema\" \n  xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" \n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n  id=\"f816dfd4-4683-4f68-b912-ffffffgh0002\" \n  formatVersion=\"2.2.2\" \n  creationDate=\"2021-06-09T13:33:45.483\" \n  userAgent=\"1С - БЭД: 1.7.2.55;БиблиотекаЭлектронныхДокументовДемо: 1.7.2.55\">\n  <Sender>\n    <Customer \n      id=\"40702810701300009144\" \n      name=\"Общество с ограниченной ответственностью &quot;Тест Директ Банк&quot;\" \n      inn=\"0329156629\"/>\n  </Sender>\n  <Recipient>\n    <Bank \n      bic=\"044525593\" \n      name=\"АО &quot;АЛЬФА-БАНК&quot;\"/>\n  </Recipient>\n  <!-- Document@id генерируется новый уникальный для каждого документа -->\n  <!-- Document@dockind - тип документа -->\n  <Document \n    id=\"f816dfd4-4683-4f68-b912-ffffffgh0001\" \n    dockind=\"14\" \n    formatVersion=\"2.2.2\">\n<!-- Запрос выписки зашиврован в base64 в поле Data - аналогично для отправки платежа или ведомости в банк документ необходимо зашифровать в base64 перед отправкой и поместить в поле Data -->\n<Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBTdGF0\nZW1lbnRSZXF1ZXN0QGlkINCz0LXQvdC10YDQuNGA0YPQtdGC0YHRjyDQvdC+0LLR\ni9C5INGD0L3QuNC60LDQu9GM0L3Ri9C5INC00LvRjyDQutCw0LbQtNC+0LPQviDQ\ntNC+0LrRg9C80LXQvdGC0LAgLS0+CjxTdGF0ZW1lbnRSZXF1ZXN0IGNyZWF0aW9u\nRGF0ZT0iMjAyMS0wNi0wOVQxMzozMzo0NS40NjYiIGZvcm1hdFZlcnNpb249IjIu\nMi4yIiBpZD0iZjgxNmRmZDQtNDY4My00ZjY4LWI5MTItZmZmZmZmZ2gwMDAxIiB1\nc2VyQWdlbnQ9IjHQoSAtINCR0K3QlDogMS43LjIuNTU7INCR0LjQsdC70LjQvtGC\n0LXQutCw0K3Qu9C10LrRgtGA0L7QvdC90YvRhdCU0L7QutGD0LzQtdC90YLQvtCy\n0JTQtdC80L46IDEuNy4yLjU1IiB4bWxucz0iaHR0cDovL2RpcmVjdGJhbmsuMWMu\ncnUvWE1MU2NoZW1hIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y\nTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxT\nY2hlbWEtaW5zdGFuY2UiPgogICAgICA8IS0tINCSINGC0LXQs9C1IFNlbmRlciDR\ng9C60LDQt9GL0LLQsNGO0YLRgdGPINGA0LXQutCy0LjQt9C40YLRiyDQutC+0LzQ\nv9Cw0L3QuNC4INC4INC10ZEg0YHRh9GR0YLQsCwg0L/QviDQutC+0YLQvtGA0L7Q\nvNGDINC90YPQttC90L4g0YHRhNC+0YDQvNC40YDQvtCy0LDRgtGMINCy0YvQv9C4\n0YHQutGDIC0tPgogICAgICA8U2VuZGVyIGlkPSI0MDcwMjgxMDcwMTMwMDAwOTE0\nNCIgaW5uPSIwMzI5MTU2NjI5IiBrcHA9IjA0MzM2MDA4MSIgbmFtZT0i0J7QsdGJ\n0LXRgdGC0LLQviDRgSDQvtCz0YDQsNC90LjRh9C10L3QvdC+0LjMhiDQvtGC0LLQ\ntdGC0YHRgtCy0LXQvdC90L7RgdGC0YzRjiAmcXVvdDvQotC10YHRgiDQlNC40YDQ\ntdC60YIg0JHQsNC90LomcXVvdDsiLz4KICAgICAgPFJlY2lwaWVudCBiaWM9IjA0\nNDUyNTU5MyIgbmFtZT0i0JDQniAmcXVvdDvQkNCb0KzQpNCQLdCR0JDQndCaJnF1\nb3Q7Ii8+CiAgICAgIDxEYXRhPgogICAgICAgICAgICA8U3RhdGVtZW50VHlwZT4w\nPC9TdGF0ZW1lbnRUeXBlPgogICAgICAgICAgICA8IS0tINCSINGC0LXQs9Cw0YUg\nRGF0ZUZyb20g0LggRGF0ZVRvINGD0LrQsNC30YvQstCw0LXRgtGB0Y8g0L/QtdGA\n0LjQvtC0LCDQt9CwINC60L7RgtC+0YDRi9C5INC90YPQttC90L4g0YHRhNC+0YDQ\nvNC40YDQvtCy0LDRgtGMINCy0YvQv9C40YHQutGDIC0tPgogICAgICAgICAgICA8\nRGF0ZUZyb20+MjAyMi0wNC0yNVQxMzo1MTo0NS40Nzc8L0RhdGVGcm9tPgogICAg\nICAgICAgICA8RGF0ZVRvPjIwMjItMDQtMzBUMTM6NTE6NDUuNDc3PC9EYXRlVG8+\nCiAgICAgICAgICAgIDwhLS0g0JIg0YLQtdCz0LUgQWNjb3VudCDRg9C60LDQt9GL\n0LLQsNC10YLRgdGPINGB0YfRkdGCLCDQv9C+INC60L7RgtC+0YDQvtC80YMg0L3R\ng9C20L3QviDRgdGE0L7RgNC80LjRgNC+0LLQsNGC0Ywg0LLRi9C/0LjRgdC60YMg\nLS0+CiAgICAgICAgICAgIDxBY2NvdW50PjQwNzAyODEwNzAxMzAwMDA5MTQ0PC9B\nY2NvdW50PgogICAgICAgICAgICA8QmFuaz4KICAgICAgICAgICAgICAgICAgPEJJ\nQz4wNDQ1MjU1OTM8L0JJQz4KICAgICAgICAgICAgICAgICAgPE5hbWU+0JDQniAm\ncXVvdDvQkNCb0KzQpNCQLdCR0JDQndCaJnF1b3Q7PC9OYW1lPgogICAgICAgICAg\nICAgICAgPC9CYW5rPgogICAgICAgICAgPC9EYXRhPgo8L1N0YXRlbWVudFJlcXVl\nc3Q+</Data>\n  </Document>\n</Packet>"
 				},
 				"url": {
 					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/SendPack",
@@ -128,7 +128,7 @@
 			"response": []
 		},
 		{
-			"name": "Получить список пакетов",
+			"name": "Получить список пакетов с ответами от банка",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -187,7 +187,7 @@
 			"response": []
 		},
 		{
-			"name": "Получить значение пакета (извещения)",
+			"name": "Получить значение пакета с ответом (ответом может быть статус документа или сформированная выписка в поле Packet.Document.Data)",
 			"request": {
 				"auth": {
 					"type": "basic",
