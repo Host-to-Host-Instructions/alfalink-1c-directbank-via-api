@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Данный пример содержит пакет с платежом. -->
+<!-- Packet@id генерируется новый уникальный для каждого пакета -->
+<Packet 
+  xmlns="http://directbank.1c.ru/XMLSchema" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  id="4fabcb6a-b471-11ea-83a8-d937bf859301" 
+  formatVersion="2.2.2" 
+  creationDate="2022-07-21T13:33:45.483" 
+  userAgent="1С - БЭД: 1.7.2.55;БиблиотекаЭлектронныхДокументовДемо: 1.7.2.55">
+  <Sender>
+    <Customer 
+      id="40702810100000001111" 
+      name="Общество с ограниченной ответственностью &quot;МАНИ&quot;" 
+      inn="0551666943"/>
+  </Sender>
+  <Recipient>
+    <Bank 
+      bic="044525593" 
+      name="АО &quot;АЛЬФА-БАНК&quot;"/>
+  </Recipient>
+  <!-- Document@id генерируется новый уникальный для каждого документа -->
+  <!-- Document@dockind - тип документа -->
+  <Document 
+    id="4fabcb6a-b471-11ea-83a8-d937bf859301" 
+    dockind="21" 
+    formatVersion="2.2.2">
+  <!-- Документ зашифрован в base64 в поле Data - для отправки в банк документ необходимо зашифровать в base64 перед отправкой и поместить в поле Data -->
+  <Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPNCh0YfQtdGC
+0LDQn9CaIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVt
+YSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1p
+bnN0YW5jZSIgeG1sbnM9Imh0dHA6Ly92OC4xYy5ydS9lZGkvZWRpX3N0bmQvMTA5
+IiB4c2k6dHlwZT0i0KHRh9C10YLQn9CaIiDQlNCw0YLQsNCk0L7RgNC80LjRgNC+
+0LLQsNC90LjRjz0iMjAyMi0wNy0yMSIg0J3QvtC80LXRgNCU0L7Qs9C+0LLQvtGA
+0LA9IjAwNzU0NSIg0J3QsNC40LzQtdC90L7QstCw0L3QuNC10J7RgNCz0LDQvdC4
+0LfQsNGG0LjQuD0i0J7QntCeICZxdW90O9Cc0JDQndCYJnF1b3Q7IiDQmNCd0J09
+IjA1NTE2NjY5NDMiINCg0LDRgdGH0LXRgtC90YvQudCh0YfQtdGC0J7RgNCz0LDQ
+vdC40LfQsNGG0LjQuD0iNDA3MDI4MTAxMDAwMDAwMDExMTEiINCR0JjQmj0iMDQ0
+NTI1NTkzIiDQmNC00J/QtdGA0LLQuNGH0L3QvtCz0L7QlNC+0LrRg9C80LXQvdGC
+0LA9IjRmYWJjYjZhLWI0NzEtMTFlYS04M2E4LWQ5MzdiZjg1OTMwMSIg0J3QvtC8
+0LXRgNCg0LXQtdGB0YLRgNCwPSIxIiDQlNCw0YLQsNCg0LXQtdGB0YLRgNCwPSIy
+MDIyLTA3LTIxIj4KICA80JfQsNGH0LjRgdC70LXQvdC40LXQl9Cw0YDQv9C70LDR
+gtGLPgogICAgPNCh0L7RgtGA0YPQtNC90LjQuiDQndC/0L89IjEiPgogICAgICA8
+0KTQsNC80LjQu9C40Y8+0KHQtdC80LXQvdC+0LI8L9Ck0LDQvNC40LvQuNGPPgog
+ICAgICA80JjQvNGPPtCh0LXQvNC10L08L9CY0LzRjz4KICAgICAgPNCe0YLRh9C1
+0YHRgtCy0L4+0KHQtdC80LXQvdC+0LLQuNGHPC/QntGC0YfQtdGB0YLQstC+Pgog
+ICAgICA80J7RgtC00LXQu9C10L3QuNC10JHQsNC90LrQsD4wMDAwPC/QntGC0LTQ
+tdC70LXQvdC40LXQkdCw0L3QutCwPgogICAgICA80JvQuNGG0LXQstC+0LnQodGH
+0LXRgj40MDgxNzgxMDEwNDk4MDAwMDA0Mjwv0JvQuNGG0LXQstC+0LnQodGH0LXR
+gj4KICAgICAgPNCh0YPQvNC80LA+Mi4wMDwv0KHRg9C80LzQsD4KICAgICAgPNCa
+0L7QtNCS0LDQu9GO0YLRiz42NDM8L9Ca0L7QtNCS0LDQu9GO0YLRiz4KICAgIDwv
+0KHQvtGC0YDRg9C00L3QuNC6PgogIDwv0JfQsNGH0LjRgdC70LXQvdC40LXQl9Cw
+0YDQv9C70LDRgtGLPgogIDzQktC40LTQl9Cw0YfQuNGB0LvQtdC90LjRjz4wMTwv
+0JLQuNC00JfQsNGH0LjRgdC70LXQvdC40Y8+CiAgPNCa0L7QtNCS0LjQtNCw0JTQ
+vtGF0L7QtNCwPjE8L9Ca0L7QtNCS0LjQtNCw0JTQvtGF0L7QtNCwPgogIDzQmtC+
+0L3RgtGA0L7Qu9GM0L3Ri9C10KHRg9C80LzRiz4KICAgIDzQmtC+0LvQuNGH0LXR
+gdGC0LLQvtCX0LDQv9C40YHQtdC5PjE8L9Ca0L7Qu9C40YfQtdGB0YLQstC+0JfQ
+sNC/0LjRgdC10Lk+CiAgICA80KHRg9C80LzQsNCY0YLQvtCz0L4+Mi4wMDwv0KHR
+g9C80LzQsNCY0YLQvtCz0L4+CiAgPC/QmtC+0L3RgtGA0L7Qu9GM0L3Ri9C10KHR
+g9C80LzRiz4KPC/QodGH0LXRgtCw0J/Qmj4=</Data>
+  </Document>
+</Packet>
