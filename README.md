@@ -71,7 +71,7 @@
 
 | Параметр | Значение |
 | ------------- |-------------|
-| Сервер | https://grampus-int.alfabank.ru/API/v1/directbank |
+| Сервер | https://alfa-link-int.alfabank.ru/API/v1/directbank |
 | Логин | directBank |
 | Пароль | 123456 |
 
