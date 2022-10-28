@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4977cf15-175e-446e-9277-956d024bcb5a",
+		"_postman_id": "ba812972-b728-46c6-ba56-1caa8fed04cf",
 		"name": "1C:DirectBank. Тестирование",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -47,10 +47,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/Logon",
+					"raw": "https://alfa-link-int.alfabank.ru/API/v1/directbank/Logon",
 					"protocol": "https",
 					"host": [
-						"grampus-int",
+						"alfa-link-int",
 						"alfabank",
 						"ru"
 					],
@@ -110,10 +110,10 @@
 					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Данный пример содержит пакет с запросом выписки. В запросе указываются необходимый период выписки и реквизиты счёта -->\n<!-- Packet@id генерируется новый уникальный для каждого пакета -->\n<Packet \n  xmlns=\"http://directbank.1c.ru/XMLSchema\" \n  xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" \n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n  id=\"f816dfd4-4683-4f68-b912-ffffffgh0002\" \n  formatVersion=\"2.2.2\" \n  creationDate=\"2021-06-09T13:33:45.483\" \n  userAgent=\"1С - БЭД: 1.7.2.55;БиблиотекаЭлектронныхДокументовДемо: 1.7.2.55\">\n  <Sender>\n    <Customer \n      id=\"40702810701300009144\" \n      name=\"Общество с ограниченной ответственностью &quot;Тест Директ Банк&quot;\" \n      inn=\"0329156629\"/>\n  </Sender>\n  <Recipient>\n    <Bank \n      bic=\"044525593\" \n      name=\"АО &quot;АЛЬФА-БАНК&quot;\"/>\n  </Recipient>\n  <!-- Document@id генерируется новый уникальный для каждого документа -->\n  <!-- Document@dockind - тип документа -->\n  <Document \n    id=\"f816dfd4-4683-4f68-b912-ffffffgh0001\" \n    dockind=\"14\" \n    formatVersion=\"2.2.2\">\n<!-- Запрос выписки зашиврован в base64 в поле Data - аналогично для отправки платежа или ведомости в банк документ необходимо зашифровать в base64 перед отправкой и поместить в поле Data -->\n<Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBTdGF0\nZW1lbnRSZXF1ZXN0QGlkINCz0LXQvdC10YDQuNGA0YPQtdGC0YHRjyDQvdC+0LLR\ni9C5INGD0L3QuNC60LDQu9GM0L3Ri9C5INC00LvRjyDQutCw0LbQtNC+0LPQviDQ\ntNC+0LrRg9C80LXQvdGC0LAgLS0+CjxTdGF0ZW1lbnRSZXF1ZXN0IGNyZWF0aW9u\nRGF0ZT0iMjAyMS0wNi0wOVQxMzozMzo0NS40NjYiIGZvcm1hdFZlcnNpb249IjIu\nMi4yIiBpZD0iZjgxNmRmZDQtNDY4My00ZjY4LWI5MTItZmZmZmZmZ2gwMDAxIiB1\nc2VyQWdlbnQ9IjHQoSAtINCR0K3QlDogMS43LjIuNTU7INCR0LjQsdC70LjQvtGC\n0LXQutCw0K3Qu9C10LrRgtGA0L7QvdC90YvRhdCU0L7QutGD0LzQtdC90YLQvtCy\n0JTQtdC80L46IDEuNy4yLjU1IiB4bWxucz0iaHR0cDovL2RpcmVjdGJhbmsuMWMu\ncnUvWE1MU2NoZW1hIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y\nTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxT\nY2hlbWEtaW5zdGFuY2UiPgogICAgICA8IS0tINCSINGC0LXQs9C1IFNlbmRlciDR\ng9C60LDQt9GL0LLQsNGO0YLRgdGPINGA0LXQutCy0LjQt9C40YLRiyDQutC+0LzQ\nv9Cw0L3QuNC4INC4INC10ZEg0YHRh9GR0YLQsCwg0L/QviDQutC+0YLQvtGA0L7Q\nvNGDINC90YPQttC90L4g0YHRhNC+0YDQvNC40YDQvtCy0LDRgtGMINCy0YvQv9C4\n0YHQutGDIC0tPgogICAgICA8U2VuZGVyIGlkPSI0MDcwMjgxMDcwMTMwMDAwOTE0\nNCIgaW5uPSIwMzI5MTU2NjI5IiBrcHA9IjA0MzM2MDA4MSIgbmFtZT0i0J7QsdGJ\n0LXRgdGC0LLQviDRgSDQvtCz0YDQsNC90LjRh9C10L3QvdC+0LjMhiDQvtGC0LLQ\ntdGC0YHRgtCy0LXQvdC90L7RgdGC0YzRjiAmcXVvdDvQotC10YHRgiDQlNC40YDQ\ntdC60YIg0JHQsNC90LomcXVvdDsiLz4KICAgICAgPFJlY2lwaWVudCBiaWM9IjA0\nNDUyNTU5MyIgbmFtZT0i0JDQniAmcXVvdDvQkNCb0KzQpNCQLdCR0JDQndCaJnF1\nb3Q7Ii8+CiAgICAgIDxEYXRhPgogICAgICAgICAgICA8U3RhdGVtZW50VHlwZT4w\nPC9TdGF0ZW1lbnRUeXBlPgogICAgICAgICAgICA8IS0tINCSINGC0LXQs9Cw0YUg\nRGF0ZUZyb20g0LggRGF0ZVRvINGD0LrQsNC30YvQstCw0LXRgtGB0Y8g0L/QtdGA\n0LjQvtC0LCDQt9CwINC60L7RgtC+0YDRi9C5INC90YPQttC90L4g0YHRhNC+0YDQ\nvNC40YDQvtCy0LDRgtGMINCy0YvQv9C40YHQutGDIC0tPgogICAgICAgICAgICA8\nRGF0ZUZyb20+MjAyMi0wNC0yNVQxMzo1MTo0NS40Nzc8L0RhdGVGcm9tPgogICAg\nICAgICAgICA8RGF0ZVRvPjIwMjItMDQtMzBUMTM6NTE6NDUuNDc3PC9EYXRlVG8+\nCiAgICAgICAgICAgIDwhLS0g0JIg0YLQtdCz0LUgQWNjb3VudCDRg9C60LDQt9GL\n0LLQsNC10YLRgdGPINGB0YfRkdGCLCDQv9C+INC60L7RgtC+0YDQvtC80YMg0L3R\ng9C20L3QviDRgdGE0L7RgNC80LjRgNC+0LLQsNGC0Ywg0LLRi9C/0LjRgdC60YMg\nLS0+CiAgICAgICAgICAgIDxBY2NvdW50PjQwNzAyODEwNzAxMzAwMDA5MTQ0PC9B\nY2NvdW50PgogICAgICAgICAgICA8QmFuaz4KICAgICAgICAgICAgICAgICAgPEJJ\nQz4wNDQ1MjU1OTM8L0JJQz4KICAgICAgICAgICAgICAgICAgPE5hbWU+0JDQniAm\ncXVvdDvQkNCb0KzQpNCQLdCR0JDQndCaJnF1b3Q7PC9OYW1lPgogICAgICAgICAg\nICAgICAgPC9CYW5rPgogICAgICAgICAgPC9EYXRhPgo8L1N0YXRlbWVudFJlcXVl\nc3Q+</Data>\n  </Document>\n</Packet>"
 				},
 				"url": {
-					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/SendPack",
+					"raw": "https://alfa-link-int.alfabank.ru/API/v1/directbank/SendPack",
 					"protocol": "https",
 					"host": [
-						"grampus-int",
+						"alfa-link-int",
 						"alfabank",
 						"ru"
 					],
@@ -173,10 +173,10 @@
 					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Данный пример содержит пакет с платежом. -->\n<!-- Packet@id генерируется новый уникальный для каждого пакета -->\n<Packet \n  xmlns=\"http://directbank.1c.ru/XMLSchema\" \n  xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" \n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n  id=\"f816dfd4-4683-4f68-b912-ffffffgh0002\" \n  formatVersion=\"2.2.2\" \n  creationDate=\"2021-06-09T13:33:45.483\" \n  userAgent=\"1С - БЭД: 1.7.2.55;БиблиотекаЭлектронныхДокументовДемо: 1.7.2.55\">\n  <Sender>\n    <Customer \n      id=\"40702810701300009144\" \n      name=\"Общество с ограниченной ответственностью &quot;Тест Директ Банк&quot;\" \n      inn=\"0329156629\"/>\n  </Sender>\n  <Recipient>\n    <Bank \n      bic=\"044525593\" \n      name=\"АО &quot;АЛЬФА-БАНК&quot;\"/>\n  </Recipient>\n  <!-- Document@id генерируется новый уникальный для каждого документа -->\n  <!-- Document@dockind - тип документа -->\n  <Document \n    id=\"f816dfd4-4683-4f68-b912-ffffffgh0001\" \n    dockind=\"10\" \n    formatVersion=\"2.2.2\">\n  <!-- Платёж зашифрован в base64 в поле Data - для отправки в банк документ необходимо зашифровать в base64 перед отправкой и поместить в поле Data -->\n  <Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPFBheURvY1J1\nIAogIHhtbG5zPSJodHRwOi8vZGlyZWN0YmFuay4xYy5ydS9YTUxTY2hlbWEiIAog\nIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgCiAg\neG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0\nYW5jZSIgCiAgaWQ9ImY4MTZkZmQ0LTQ2ODMtNGY2OC1iOTEyLWZmZmZmZmdoMDAw\nMSIgCiAgZm9ybWF0VmVyc2lvbj0iMi4yLjIiIAogIGNyZWF0aW9uRGF0ZT0iMjAy\nMS0wNi0wOVQxMzozMzo0NSIgCiAgdXNlckFnZW50PSIx0KEgLSDQkdCt0JQ6IDEu\nNy4yLjU1O9CR0LjQsdC70LjQvtGC0LXQutCw0K3Qu9C10LrRgtGA0L7QvdC90YvR\nhdCU0L7QutGD0LzQtdC90YLQvtCy0JTQtdC80L46IDEuNy4yLjU1Ij4KICA8U2Vu\nZGVyIAogICAgaWQ9IjQwNzAyODEwNzAxMzAwMDA5MTQ0IiAKICAgIG5hbWU9ItCe\n0LHRidC10YHRgtCy0L4g0YEg0L7Qs9GA0LDQvdC40YfQtdC90L3QvtC4zIYg0L7R\ngtCy0LXRgtGB0YLQstC10L3QvdC+0YHRgtGM0Y4gJnF1b3Q70KLQtdGB0YIg0JTQ\nuNGA0LXQutGCINCR0LDQvdC6JnF1b3Q7IiAKICAgIGlubj0iMDMyOTE1NjYyOSIg\nCiAgICBrcHA9IjA0MzM2MDA4MSIvPgogIDxSZWNpcGllbnQgCiAgICBiaWM9IjA0\nNDUyNTU5MyIgCiAgICBuYW1lPSLQkNCeICZxdW90O9CQ0JvQrNCk0JAt0JHQkNCd\n0JomcXVvdDsiLz4KICA8RGF0YT4KICAgIDxEb2NObz4xODwvRG9jTm8+CiAgICA8\nRG9jRGF0ZT4yMDIxLTAzLTAyPC9Eb2NEYXRlPgogICAgPFN1bT4xPC9TdW0+CiAg\nICA8UGF5ZXI+CiAgICAgIDxOYW1lPtCe0LHRidC10YHRgtCy0L4g0YEg0L7Qs9GA\n0LDQvdC40YfQtdC90L3QvtC4zIYg0L7RgtCy0LXRgtGB0YLQstC10L3QvdC+0YHR\ngtGM0Y4gItCi0LXRgdGCINCU0LjRgNC10LrRgiDQkdCw0L3QuiI8L05hbWU+CiAg\nICAgIDxJTk4+MDMyOTE1NjYyOTwvSU5OPgogICAgICA8S1BQPjA0MzM2MDA4MTwv\nS1BQPgogICAgICA8QWNjb3VudD40MDcwMjgxMDcwMTMwMDAwOTE0NDwvQWNjb3Vu\ndD4KICAgICAgPEJhbms+CiAgICAgICAgPEJJQz4wNDQ1MjU1OTM8L0JJQz4KICAg\nICAgICA8TmFtZT7QkNCeICLQkNCb0KzQpNCQLdCR0JDQndCaIjwvTmFtZT4KICAg\nICAgICA8Q2l0eT7QsyDQnNC+0YHQutCy0LA8L0NpdHk+CiAgICAgICAgPENvcnJl\nc3BBY2M+MzAxMDE4MTAyMDAwMDAwMDA1OTM8L0NvcnJlc3BBY2M+CiAgICAgIDwv\nQmFuaz4KICAgIDwvUGF5ZXI+CiAgICA8UGF5ZWU+CiAgICAgIDxOYW1lPtCe0LHR\nidC10YHRgtCy0L4g0YEg0L7Qs9GA0LDQvdC40YfQtdC90L3QvtC4zIYg0L7RgtCy\n0LXRgtGB0YLQstC10L3QvdC+0YHRgtGM0Y4gItCi0LXRgdGCINCU0LjRgNC10LrR\ngiDQsdCw0L3QuiDQn9C+0LvRg9GH0LDRgtC10LvRjCI8L05hbWU+CiAgICAgIDxJ\nTk4+MDMyOTE1NjYzNjwvSU5OPgogICAgICA8S1BQPjc3MDEwMTk5OTwvS1BQPgog\nICAgICA8QWNjb3VudD40MDcwMjgxMDMwMDAwMDAxOTc5NjwvQWNjb3VudD4KICAg\nICAgPEJhbms+CiAgICAgICAgPEJJQz4wNDQ1MjU1OTM8L0JJQz4KICAgICAgICA8\nTmFtZT7QkNCeICLQkNCb0KzQpNCQLdCR0JDQndCaIjwvTmFtZT4KICAgICAgICA8\nQ2l0eT7QsyDQnNC+0YHQutCy0LA8L0NpdHk+CiAgICAgICAgPENvcnJlc3BBY2M+\nMzAxMDE4MTAyMDAwMDAwMDA1OTM8L0NvcnJlc3BBY2M+CiAgICAgIDwvQmFuaz4K\nICAgIDwvUGF5ZWU+CiAgICA8VHJhbnNpdGlvbktpbmQ+MDE8L1RyYW5zaXRpb25L\naW5kPgogICAgPFByaW9yaXR5PjU8L1ByaW9yaXR5PgogICAgPENvZGU+MDwvQ29k\nZT4KICAgIDxQdXJwb3NlPtCi0LXRgdGCPC9QdXJwb3NlPgogIDwvRGF0YT4KPC9Q\nYXlEb2NSdT4=\n  </Data>\n  <!-- Подпись документа -->\n  <Signature x509IssuerName=\"CRYPTO-PRO Test Center 2\" x509SerialNumber=\"xxx\">\n      <SignedData>test</SignedData>\n    </Signature>\n  </Document>\n</Packet>"
 				},
 				"url": {
-					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/SendPack",
+					"raw": "https://alfa-link-int.alfabank.ru/API/v1/directbank/SendPack",
 					"protocol": "https",
 					"host": [
-						"grampus-int",
+						"alfa-link-int",
 						"alfabank",
 						"ru"
 					],
@@ -232,10 +232,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/GetPackList",
+					"raw": "https://alfa-link-int.alfabank.ru/API/v1/directbank/GetPackList",
 					"protocol": "https",
 					"host": [
-						"grampus-int",
+						"alfa-link-int",
 						"alfabank",
 						"ru"
 					],
@@ -291,10 +291,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://grampus-int.alfabank.ru/API/v1/directbank/GetPack?id=ID пакета",
+					"raw": "https://alfa-link-int.alfabank.ru/API/v1/directbank/GetPack?id=ID пакета",
 					"protocol": "https",
 					"host": [
-						"grampus-int",
+						"alfa-link-int",
 						"alfabank",
 						"ru"
 					],
