@@ -391,5 +391,5 @@ https://www.cryptopro.ru/products/csp/jcsp https://www.cryptopro.ru/products/csp
 - Отправить свой вопрос по почте на адрес:
   - [ASKhramtsova@alfabank.ru](mailto:ASKhramtsova@alfabank.ru) (Анастасия Храмцова)
   - в копию (обязательно):
-    - [AKopyltsova@alfabank.ru](mailto:AKopyltsova@alfabank.ru) (Анна Копыльцова)
+    - [ASedov@alfabank.ru](mailto:ASedov@alfabank.ru) (Антон Седов)
     - [alfa-link@alfabank.ru](mailto:alfa-link@alfabank.ru)
